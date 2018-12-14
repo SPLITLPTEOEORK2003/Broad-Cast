@@ -15,7 +15,7 @@ client.login(process.env.TOKEN4);// لا تغير فيها شيء
 
 
 client.on('message', message => {
-	    var prefix = "V";
+	    var prefix = "*";
     
         if (message.author.id === client.user.id) return;
         if (message.guild) {
@@ -59,7 +59,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`I Miss You`,"http://twitch.tv/y04zgamer")
+  client.user.setGame(`.Eàgle Server`,"http://twitch.tv/y04zgamer")
    client.user.setStatus("dnd")
 });
 
@@ -68,7 +68,7 @@ client.login(process.env.TOKEN4);// لا تغير فيها شيء
 
 client.on('message', message => {
     let args = message.content.split(' ').slice(1).join(' ');
-    if (message.content.startsWith('Vbc-bot')){ // البريفكس والامر
+    if (message.content.startsWith('*bc2')){ // البريفكس والامر
     if(!message.author.id === '') return;
     message.channel.sendMessage('جار ارسال الرسالة :white_check_mark:')
     client.users.forEach(m =>{
